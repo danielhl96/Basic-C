@@ -211,12 +211,9 @@ int main(void) {
     }
 
 
-    Matrix d = make_matrix(3,4);
+    Matrix d = make_matrix(4,4);
     d = fill_matrix(d,mat1);
-    d.matrix[0][2] = 74.0;
-    d.matrix[0][3] = 33.0;
-    d.matrix[1][0] = 22.0;
-
+ 
     printf("DET(%d)\n",laplace(d));
     print_matrix(d);
     free_matrix(d);
